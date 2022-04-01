@@ -18,8 +18,7 @@
       "Lorem ipsum dolor"
     ]
   },
-  "Gallery": [
-    {
+  "Gallery": [{
       "title": "Project Title",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
@@ -65,8 +64,7 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
-  "Services": [
-    {
+  "Services": [{
       "icon": "fa fa-wordpress",
       "name": "Lorem ipsum dolor",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
@@ -97,8 +95,7 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
     }
   ],
-  "Testimonials": [
-    {
+  "Testimonials": [{
       "img": "img/testimonials/01.jpg",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
       "name": "John Doe"
@@ -129,8 +126,7 @@
       "name": "Johnathan Doe"
     }
   ],
-  "Team": [
-    {
+  "Team": [{
       "img": "img/team/01.jpg",
       "name": "John Doe",
       "job": "Director"
@@ -152,15 +148,12 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
-    "facebook": "fb.com",
-    "twitter": "twitter.com",
-    "youtube": "youtube.com"
+    "address": "Jl Tebet Barat Raya No.44 ",
+    "phone": "+6285692345728",
+    "email": "info@masjidfatimahmuhammad.com",
+    "youtube": "https://www.youtube.com/channel/UCSzwUyXhRvNvPAWrzsutRQQ"
   },
-  "Features": [
-    {
+  "Features": [{
       "icon": "fa fa-people-roof fa-4x",
       "title": "Yayasan",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
