@@ -1,63 +1,84 @@
+import { Link } from "react-scroll";
 export const Navigation = (props) => {
   return (
-    <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
-      <div className='container'>
-        <div className='navbar-header'>
+    <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+      <div className="container">
+        <div className="navbar-header">
           <button
-            type='button'
-            className='navbar-toggle collapsed'
-            data-toggle='collapse'
-            data-target='#bs-example-navbar-collapse-1'
+            type="button"
+            className="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
           >
-            {' '}
-            <span className='sr-only'>Toggle navigation</span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
-            <span className='icon-bar'></span>{' '}
+            {" "}
+            <span className="sr-only">Toggle navigation</span>{" "}
+            <span className="icon-bar"></span>{" "}
+            <span className="icon-bar"></span>{" "}
+            <span className="icon-bar"></span>{" "}
           </button>
-          <a href='#page-top'>
-            <img className="page-scroll" src='../img/header-mfm.jpg'></img>
-          </a>{' '}
+          <img src="../img/header-mfm.jpg"></img>
         </div>
 
         <div
-          className='collapse navbar-collapse'
-          id='bs-example-navbar-collapse-1'
+          className="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-1"
         >
-          <ul className='nav navbar-nav navbar-right'>
+          <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href='#beranda' className='page-scroll'>
+              <Link
+                activeClass="active"
+                to="#beranda"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 Beranda
-              </a>
+              </Link>
             </li>
+
             <li>
-              <a href='#profil' className='page-scroll'>
-                Profil
-              </a>
-            </li>
-            <li>
-              <a href='#artikel' className='page-scroll'>
-                Artikel
-              </a>
-            </li>
-            <li>
-              <a href='#layanan' className='page-scroll'>
+              <Link
+                activeClass="active"
+                to="#layanan"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 Layanan
-              </a>
+              </Link>
             </li>
             <li>
-              <a href='#masjidfatimahmuhammadtv' className='page-scroll'>
-                Majsid Fatimah Muhammad TV
-              </a>
+              <Link
+                activeClass="active"
+                to="#artikel"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Artikel
+              </Link>
             </li>
             <li>
-              <a href='#kontak' className='page-scroll'>
+              <Link
+                activeClass="active"
+                to="#kontak"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 Kontak
-              </a>
+              </Link>
+            </li>
+            <li>
+              <a>Masjid Fatimah Muhammad</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};

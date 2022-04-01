@@ -140,7 +140,7 @@ hr {
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #FFE956;
 }
-.section-title {
+/* .section-title {
   margin-bottom: 70px;
 }
 .section-title h2 {
@@ -161,7 +161,7 @@ hr {
 }
 .section-title p {
   font-size: 18px;
-}
+} */
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
@@ -248,6 +248,7 @@ header .intro-text {
 #features {
   background: #f6f6f6;
 }
+
 #features i.fa {
   font-size: 38px;
   margin-bottom: 20px;
@@ -310,14 +311,14 @@ header .intro-text {
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #FFE956 0%, #CB9A55 100%);
+  background: #f6f6f6;
   color: #fff;
 }
 #services .service-desc {
   margin: 10px 10px 20px;
 }
 #services h2 {
-  color: #fff;
+  color: #333;
 }
 #services .section-title h2::after {
   position: absolute;
@@ -340,12 +341,12 @@ header .intro-text {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
 #services h3 {
-  font-weight: 500;
+  font-weight: 700;
   padding: 5px 0;
-  color: #fff;
+  color: #777;
 }
 #services p {
-  color: rgba(255, 255, 255, 0.75);
+  color: #777;
 }
 #services .service-desc {
   margin-bottom: 40px;

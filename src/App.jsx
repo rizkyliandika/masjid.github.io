@@ -12,10 +12,13 @@ import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
+export const scroll = new SmoothScroll('[data-easing="linear"]', {
+  easing: "linear",
 });
+
+// export const scroll = new SmoothScroll('[data-easing="linear"]', {
+//   easing: "linear",
+// });
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
@@ -26,14 +29,26 @@ const App = () => {
   return (
     <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-      <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery data={landingPageData.Gallery}/>
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
+      <div id="#beranda">
+        <Header data={landingPageData.Header} />
+      </div>
+      <div id="#layanan">
+        <Features data={landingPageData.Features} />
+      </div>
+      <div id="#tentang-kami">
+        <About data={landingPageData.About} />
+      </div>
+      <div id="#artikel">
+        <Services data={landingPageData.Services} />
+      </div>
+      {/* <Gallery data={landingPageData.Gallery}/> */}
+      {/* <Testimonials data={landingPageData.Testimonials} /> */}
+      <div id="#teams">
+        <Team data={landingPageData.Team} />
+      </div>
+      <div id="#kontak">
+        <Contact data={landingPageData.Contact} />
+      </div>
     </div>
   );
 };
