@@ -74,7 +74,7 @@ export const Navigation = (props) => {
               </Link>
             </li>
             <li>
-              <a>Masjid Fatimah Muhammad</a>
+              <a>Masjid Fatimah Muhammad TV</a>
             </li>
           </ul>
         </div>
