@@ -9,10 +9,6 @@ import { maxWidth } from '@mui/system';
 
 export default function MediaCard(props) {
 
-    React.useEffect(() => {
-
-    }, [])
-
     return (
         <Card sx={{ maxWidth: 345, mt: 2 }}>
             <CardMedia

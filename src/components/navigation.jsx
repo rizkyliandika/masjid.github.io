@@ -36,6 +36,18 @@ export const Navigation = (props) => {
                 Beranda
               </Link>
             </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="#prayertimes"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Jadwal Sholat
+              </Link>
+            </li>
 
             <li>
               <Link
