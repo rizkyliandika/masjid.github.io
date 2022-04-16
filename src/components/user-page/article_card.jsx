@@ -5,10 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { maxWidth } from '@mui/system';
 
-export default function MediaCard(props) {
-
+export default function ArticleCard(props) {
     return (
         <Card sx={{ maxWidth: 345, mt: 2 }}>
             <CardMedia

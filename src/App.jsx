@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import { Navigation } from "./components/navigation";
-import { Header } from "./components/header";
-import { Features } from "./components/features";
-import { About } from "./components/about";
-import { Services } from "./components/services";
-import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
-import { PrayerTimes } from "./components/PrayerTimes";
+import { Navigation } from "./components/user-page/navigation";
+import { Header } from "./components/user-page/header";
+import { Features } from "./components/user-page/features";
+import { About } from "./components/user-page/about";
+import { Articles } from "./components/user-page/article";
+import { Team } from "./components/user-page/team";
+import { Contact } from "./components/user-page/contact";
+import { PrayerTimes } from "./components/user-page/prayer_times";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -25,7 +25,7 @@ const App = () => {
     <div>
       <Navigation />
       <div id="#beranda">
-        <Header data={landingPageData.Services} />
+        <Header data={landingPageData.Articles} />
       </div>
       {/* <div id="#prayertimes">
         <PrayerTimes />
@@ -37,7 +37,7 @@ const App = () => {
         <About data={landingPageData.About} />
       </div>
       <div id="#artikel">
-        <Services data={landingPageData.Services} />
+        <Articles data={landingPageData.Articles} />
       </div>
       <div id="#teams">
         <Team data={landingPageData.Team} />

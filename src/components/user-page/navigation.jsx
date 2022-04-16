@@ -91,6 +91,13 @@ export const Navigation = (props) => {
           </ul>
         </div>
       </div>
+      <marquee behavior='scroll'
+        scrollamount='5'
+        // width='50%'
+        direction='right'
+        height='15px'
+        background='#000'
+      >Assalamualaikum</marquee>
     </nav>
   );
 };

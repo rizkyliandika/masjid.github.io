@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
-import MediaCard from './Card';
+import ArticleCard from './article_card';
 import Box from '@mui/material/Box';
+import Pagination from '@mui/material/Pagination';
 
-export const Services = (props) => {
+export const Articles = (props) => {
 
   const [artikel, setArtikel] = useState(null);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     fetch('https://newsapi.org/v2/top-headlines?country=id&apiKey=68e1beaf012944f8ac4e302551b450ed').then((result) => {
@@ -13,6 +15,12 @@ export const Services = (props) => {
       })
     })
   }, [])
+
+  const handleChange = (event, value) => {
+    console.log('event: ', event);
+    console.log('value: ', value);
+    setPage(value);
+  };
 
   return (
     <div id='services' className='text-center'>
@@ -26,9 +34,11 @@ export const Services = (props) => {
           gridTemplateColumns: 'repeat(4, 1fr)',
           gap: 1,
         }}>
-          {artikel?.articles.map(d => (<MediaCard image={d.urlToImage} title={d.title} description={d.description} url={d.url} />))}
+          {artikel?.articles.map((d, i) => (<ArticleCard image={d.urlToImage} title={d.title} description={d.description} url={d.url} />))}
         </Box>
-
+        <Box component='div' style={{ marginTop: 10, display: 'flex', justifyContent: 'center' }}>
+          <Pagination count={artikel?.articles.length} page={page} onChange={handleChange}></Pagination>
+        </Box>
         {/* <div className='row'>
           {props.data
             ? props.data.map((d, i) => (
