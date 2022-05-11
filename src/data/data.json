@@ -171,5 +171,14 @@
       "title": "Streaming",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
+  ],
+  "UserData": [
+    {"name": "John Doe", "age" : 40, "address": "Jl.Sawo Kecik V", "role": "Admin", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Nakama Chan", "age" : 20, "address": "Jl.Sawo Kecik V", "role": "Admin", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Monkey D Luffy", "age" : 18, "address": "Raftel island", "role": "Editor", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Shanks", "age" : 30, "address": "Jl.Candi Borobudur", "role": "Editor", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Zoro", "age" : 20, "address": "Jl.Bendungan Hilir", "role": "Admin", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Jane", "age" : 19, "address": "Jl.Kepribadian Ganda", "role": "Admin", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"},
+    {"name": "Sanji", "age" : 19, "address": "Jl.Kemana aja yang penting ada cewe", "role": "Editor", "createdAt": "2022-18-04", "updatedAt": "2022-18-04"}
   ]
 }

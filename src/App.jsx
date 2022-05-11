@@ -10,6 +10,8 @@ import { PrayerTimes } from "./components/user-page/prayer_times";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import { Router } from './root';
+import { Outlet } from 'react-router-dom';
 
 export const scroll = new SmoothScroll('[data-easing="linear"]', {
   easing: "linear",
